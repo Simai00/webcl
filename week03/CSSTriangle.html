@@ -6,24 +6,28 @@
     <style>
 
         #one {
-            width:                  0;
-            aspect-ratio:           1 / 1;
-            border-style:           solid;
-            --triangle-size:        100px;
-            --triangle-side-size:   calc(var(--triangle-size) / 2);
-            border-width:           var(--triangle-size)
-                                    var(--triangle-side-size)
-                                    0
-                                    var(--triangle-side-size);
-            border-color:     blue transparent transparent transparent ;
+            width: 0;
+            aspect-ratio: 1 / 1;
+            border-style: solid;
+            border-color: transparent transparent blue transparent;
+            border-width: 0 50px 100px;
+
         }
+
         #two {
-            background-color: red;
-            width:            100px; /* for experiments only */
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid red;
         }
+
         #three {
-            background-color: green;
-            width:            100px; /* for experiments only */
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid green;
         }
 
     </style>
